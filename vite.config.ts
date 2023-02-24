@@ -22,7 +22,7 @@ import { presetUno, presetAttributify, presetIcons } from "unocss";
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
 import AutoImport from "unplugin-auto-import/vite";
-import vueI18n from "@intlify/vite-plugin-vue-i18n";
+// import vueI18n from "@intlify/vite-plugin-vue-i18n";
 // import babel from "vite-babel-plugin";
 // import Markdown from "vite-plugin-md";
 // https://vitejs.dev/config/
@@ -88,13 +88,13 @@ export default defineConfig({
       compiler: "vue3",
       autoInstall: true,
     }),
-    vueI18n({
-      runtimeOnly: true,
-      compositionOnly: true,
-      fullInstall: true,
-      include: [path.resolve(__dirname, "./src/lang/**")],
-      // include: resolve(__dirname, "src/lang/**"),
-    }),
+    // vueI18n({
+    //   runtimeOnly: true,
+    //   compositionOnly: true,
+    //   fullInstall: true,
+    //   include: [path.resolve(__dirname, "src/lang/**")],
+    //   // include: resolve(__dirname, "src/lang/**"),
+    // }),
     // babel()
   ],
   resolve: {
