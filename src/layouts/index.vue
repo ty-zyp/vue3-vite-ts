@@ -28,6 +28,11 @@
 }
 </style>
 <script lang="ts" setup>
+const { availableLocales, locale } = useI18n();
+const toggleLocales = () => {
+  const locales = availableLocales;
+  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length];
+};
 const router = useRouter();
 const logOut = () => {
   router.push(`/login`);
@@ -37,7 +42,8 @@ const logOut = () => {
   <div class="content-a">
     <div class="title">
       标题
-      <Button @click="logOut">退出登录</Button>
+      <el-button @click="logOut">退出登录</el-button>
+      <el-button @click="toggleLocales">切换语言</el-button>
     </div>
     <div class="body-content">
       <div class="side">

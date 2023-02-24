@@ -1,6 +1,6 @@
 <template>
   <div>登录页面</div>
-  <Button type="primary" @click="login">登录</Button>
+  <el-button type="primary" @click="login">登录</el-button>
 </template>
 <route lang="yaml">
 meta:

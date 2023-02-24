@@ -1,6 +1,13 @@
-import { ref, computed } from "vue";
+// import { ref, computed } from "vue";
 import { defineStore } from "pinia";
 
+export const languageStore = defineStore("language", () => {
+  const lang = ref("cn");
+  function setLanguage(val: string) {
+    lang.value = val;
+  }
+  return { lang, setLanguage };
+});
 export const useCounterStore = defineStore("counter", () => {
   const count = ref(1);
   const doubleCount = computed(() => count.value * 2);

@@ -47,12 +47,14 @@ const handleClose = (key: string, keyPath: string[]) => {
       </template>
       <el-menu-item-group>
         <template #title><span>Group One</span></template>
-        <el-menu-item index="/aa">aa页面</el-menu-item>
-        <el-menu-item index="/ab">ab页面</el-menu-item>
+        <el-menu-item index="/aa">UnoCSS</el-menu-item>
+        <el-menu-item index="/ab">多语言</el-menu-item>
+        <el-menu-item index="/ac">样式</el-menu-item>
+        <el-menu-item index="/ad">use库</el-menu-item>
       </el-menu-item-group>
       <el-menu-item-group title="Group Two">
-        <el-menu-item index="testone1">testone1</el-menu-item>
-        <el-menu-item index="testone2">testone2</el-menu-item>
+        <el-menu-item index="testone1">pinia_01</el-menu-item>
+        <el-menu-item index="testone2">pinia_02</el-menu-item>
       </el-menu-item-group>
       <el-sub-menu index="1-4">
         <template #title><span>item four</span></template>

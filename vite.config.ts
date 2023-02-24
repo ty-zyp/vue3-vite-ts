@@ -32,6 +32,7 @@ export default defineConfig({
       // resolvers: [ElementPlusResolver()],
       imports: [
         "vue",
+        "pinia",
         "vue-router",
         "vue-i18n",
         "vue/macros",

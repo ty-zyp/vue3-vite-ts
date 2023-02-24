@@ -5,7 +5,11 @@ import App from "./App.vue";
 // import router from "./router";
 
 // import routes from "pages-generated";
-import { createRouter, createWebHistory } from "vue-router";
+import {
+  createRouter,
+  createWebHistory,
+  // createWebHashHistory,
+} from "vue-router";
 import { setupLayouts } from "virtual:generated-layouts";
 import generatedRoutes from "virtual:generated-pages";
 
@@ -20,6 +24,7 @@ app.use(i18n);
 app.use(
   createRouter({
     history: createWebHistory(),
+    // history: createWebHashHistory(),
     routes,
   })
 );

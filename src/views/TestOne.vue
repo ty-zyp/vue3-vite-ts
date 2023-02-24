@@ -4,8 +4,8 @@
     <button @click="add">加加</button>
     <button @click="minus">减减</button>
     <hr />
-    <TestOne1 :age="20" />
-    <TestOne2 />
+    <!-- <TestOne1 :age="20" /> -->
+    <!-- <TestOne2 /> -->
   </div>
 </template>
 <!-- <script lang="ts">
@@ -43,10 +43,10 @@ export default defineComponent({
 </script> -->
 
 <script setup lang="ts">
-import TestOne1 from "../pages/TestOne1.vue";
-import TestOne2 from "../pages/TestOne2.vue";
-import { ref, reactive, computed, watch } from "vue";
-import type { Ref } from "vue";
+// import TestOne1 from "../pages/TestOne1.vue";
+// import TestOne2 from "../pages/TestOne2.vue";
+// import { ref, reactive, computed, watch } from "vue";
+// import type { Ref } from "vue";
 // 为ref标注类型（3种）
 // 1
 const ss = ref<number>(1);
