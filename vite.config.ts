@@ -27,7 +27,7 @@ import AutoImport from "unplugin-auto-import/vite";
 // import Markdown from "vite-plugin-md";
 // https://vitejs.dev/config/
 export default defineConfig({
-  path: '/vue3-vite-ts/',
+  base: "/vue3-vite-ts/",
   plugins: [
     AutoImport({
       // resolvers: [ElementPlusResolver()],
@@ -62,7 +62,7 @@ export default defineConfig({
     ViteVUe({ include: [/\.vue$/, /\.md$/] }),
     VitePages({
       extensions: ["vue", "md"], // 需要包含的文件类型
-      pagesDir: [ { dir: 'src/pages', baseRoute: '/vue3-vite-ts' }], // 寻找文件的目录，这里选择了项目根目录pages目录
+      // pagesDir: [{ dir: "src/pages", baseRoute: "/vue3-vite-ts" }], // 寻找文件的目录，这里选择了项目根目录pages目录
       exclude: ["**/components/*.vue"], // 排除在外的目录，即不将所有components目录下的.vue文件生成路由。
 
       extendRoute(route) {
